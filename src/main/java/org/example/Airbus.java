@@ -3,13 +3,13 @@ package org.example;
 public class Airbus extends Plane {
     private String model;
 
-    Airbus(String FuelAmount, String model) {
-        super(FuelAmount);
+    Airbus(int fuelAmount, String model) {
+        super(fuelAmount);
         this.model=model;
     }
 
     @Override
-    public void RegistrationNumber() {
+    public void registrationNumber() {
         System.out.println("A123");
     }
 }

@@ -1,12 +1,12 @@
 package org.example;
 
 public class Helicopter extends Plane implements VerticalTakeoff {
-    Helicopter(String FuelAmount) {
-        super(FuelAmount);
+    Helicopter(int fuelAmount) {
+        super(fuelAmount);
     }
 
     @Override
-    public void RegistrationNumber() {
+    public void registrationNumber() {
         System.out.println("H321");
     }
 

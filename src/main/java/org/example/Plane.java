@@ -1,21 +1,21 @@
 package org.example;
 
 public abstract class Plane {
-    private String FuelAmount; //количество топлива //Применение инкапсуляции
+    private int fuelAmount; //количество топлива //Применение инкапсуляции
     private Airline airline;
     static int LandedCount=0;
 
-    Plane(String FuelAmount) { //Создание конструктора
-        setFuelAmount(FuelAmount);
+    Plane(int fuelAmount) { //Создание конструктора
+        setFuelAmount(fuelAmount);
     }
 
-    String getFuelAmount() {
-        return FuelAmount;
+    int getFuelAmount() { //getter
+        return fuelAmount;
     }
-    void setFuelAmount(String FuelAmount) {
-        this.FuelAmount = FuelAmount;
+    void setFuelAmount(int fuelAmount) { //setter
+        this.fuelAmount = fuelAmount;
     }
-    public abstract void RegistrationNumber();
+    public abstract void registrationNumber();
 
   //  public void fly() {
 
